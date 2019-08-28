@@ -168,7 +168,7 @@
       //Config of what show in each infowindow
       for(var i = 0; i < markers.length; i++){
         contentString[i] =
-      "</span><span style='display:block;margin-bottom:5%;' class='espaco'><b>Descrição:</b> "+obj.vetor[i].sobre+
+      "</span><span style='display:block;margin-bottom:5%;' class='espaco'>"+obj.vetor[i].sobre+
       "</span>";
       infowindow[i] = new google.maps.InfoWindow({
         content: contentString[i]
