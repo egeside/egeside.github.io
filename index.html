@@ -91,11 +91,11 @@
 
       for(var i = 0; i < obj.vetor.length; i++){
         //Score's fruits process
-        //if(obj.vetor[i].titulo=='amarelo'){var tipoMarcador = 'amarelo'; amarelo+=1;}
-        //if(obj.vetor[i].titulo=='azul'){var tipoMarcador = 'azul'; azul+=1;}
+        if(obj.vetor[i].titulo=='amarelo'){var tipoMarcador = 'amarelo'; amarelo+=1;}
+        if(obj.vetor[i].titulo=='azul'){var tipoMarcador = 'azul'; azul+=1;}
         if(obj.vetor[i].titulo=='vermelho'){var tipoMarcador = 'vermelho'; vermelho+=1;}
-        //if(obj.vetor[i].titulo=='verde'){var tipoMarcador = 'verde'; verde+=1;}
-        //if(obj.vetor[i].titulo=='roxo'){var tipoMarcador = 'roxo'; roxo+=1;}
+        if(obj.vetor[i].titulo=='verde'){var tipoMarcador = 'verde'; verde+=1;}
+        if(obj.vetor[i].titulo=='roxo'){var tipoMarcador = 'roxo'; roxo+=1;}
         //End of the Score's fruits process
 
         //Formating text of infowindow
@@ -119,8 +119,8 @@
           icon: iconBase + 'red-dot.png',
           nameinlegend: 'Vermelho',
           numero: vermelho
-        };
-        /*azul: {
+        },
+        azul: {
           name: 'pontoazul',
           icon: iconBase + 'blue-dot.png',
           nameinlegend: 'Azul',
@@ -144,7 +144,7 @@
           nameinlegend: 'Roxo',
           numero: roxo
         }          
-      };*/
+      };
       //End config of personalization
 
       //To do elements markers of markercluster
