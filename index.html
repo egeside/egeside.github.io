@@ -82,8 +82,8 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
-          center: new google.maps.LatLng(-23.405285517133322,-46.6864013671875),  
-            mapTypeId: 'hybrid'//hybrid, roadmap - os melhores
+          center: new google.maps.LatLng(-23.180323,-46.890171),  
+            mapTypeId: 'satellite'//hybrid, roadmap - os melhores
           });
 
       var features = [];
@@ -190,7 +190,7 @@
 
       //Config of what show in legend
       var legend = document.getElementById('legend');
-      for (var key in icons) {
+      /*for (var key in icons) {
         var type = icons[key];
         var name = type.name;
         var nameinlegend = type.nameinlegend;
@@ -199,6 +199,15 @@
         var div = document.createElement('div');
         div.innerHTML = '<img id="'+name+'" src="' + icon + '"> ' + nameinlegend + ' - ' + numero + '<br><br>';
         legend.appendChild(div);
+      }*/
+        var name = 'pontovermelho';
+        var nameinlegend = 'Rua Rangel Pestana, 1155 - Centro, Jundiaí - SP';
+        var numero = vermelho;  
+        var icon = 'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
+        var div = document.createElement('div');
+        div.innerHTML = '<img id="'+name+'" src="' + icon + '"> ' + nameinlegend'<br><br>';
+        legend.appendChild(div);
+        
       }
       map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(legend);
       //End Config of what show in legend
