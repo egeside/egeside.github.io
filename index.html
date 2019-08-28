@@ -9,16 +9,15 @@
 </head>
 <body>
   <div id="map"></div>
-  <div id="legend"><h3>Legenda</h3></div>
 </body>
 <script src="jquery-1.11.1.min.js"></script>
 <script src="bootstrap4.min.js"></script>
 <script>
-// This example displays a marker at the center of Australia.
+// This example displays a marker at the center of Australia.{lat: -23.18033, lng: -46.890139};
 // When the user clicks the marker, an info window opens.
 
 function initMap() {
-  var uluru = {lat: -23.18033, lng: -46.890139};
+  var uluru = {lat: -25.363, lng: 131.044};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
     center: uluru
